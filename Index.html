@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de materias</title>
+    <script>
+        function almacenarDatos() {
+            // Obtener los valores de los campos
+            const nombreMateria = document.getElementById("nombreMateria").value;
+            const cantidadAlumno = document.getElementById("cantidadAlumno").value;
+
+            // Almacenar los datos en un objeto
+            const datos = {
+                materia: nombreMateria,
+                alumnos: cantidadAlumno
+            };
+
+            // Mostrar los datos en la consola
+            console.log(datos);
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="nombreMateria">Materia:</label><br>
+        <input type="text" id="nombreMateria" name="nombreMateria" value="Matematica"><br>
+        <label for="cantidadAlumno">Alumnos:</label><br>
+        <input type="text" id="cantidadAlumno" name="cantidadAlumno" value="1"><br>
+        <button type="button" onclick="almacenarDatos()">Guardar</button>
+    </form>
+</body>
+    
+</body>
+</html>
